@@ -1,0 +1,21 @@
+@use '../../../../styles/variables' as v;
+.custom-card {
+  width: 300px; // Ancho personalizado de la tarjeta
+  border-radius: 20px;
+
+  .custom-card__heading {
+    text-align: center; // Centra el título
+  }
+
+  .custom-card__list {
+    list-style: none; // Elimina los estilos de la lista
+    padding: 0; // Elimina el relleno de la lista
+  }
+
+  .custom-card__button {
+    width: 100%; // El botón ocupa todo el ancho del contenedor
+    background-color: v.$color-nav;
+    color: v.$blanco;
+    text-transform: uppercase;
+  }
+}

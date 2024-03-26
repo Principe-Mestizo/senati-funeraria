@@ -1,0 +1,10 @@
+
+@use '../../../../styles/variables' as v;
+
+.header__shared{
+  background-color: v.$color-sidebar;
+  color: v.$blanco;
+}
+.icon__user{
+  margin-top: 6px;
+}

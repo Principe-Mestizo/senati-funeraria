@@ -1,0 +1,8 @@
+@use '../../../../styles/variables' as v;
+
+
+footer {
+  padding: 20px;
+  background-color: v.$color-sidebar;
+  color: v.$color-enlaces;
+}

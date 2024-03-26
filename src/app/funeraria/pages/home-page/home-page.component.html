@@ -1,0 +1,35 @@
+
+<app-header></app-header>
+<app-navegation ></app-navegation>
+
+<app-main></app-main>
+<app-section-information></app-section-information>
+<app-ubicacion></app-ubicacion>
+<app-footer></app-footer>
+
+<div class="chat-container" *ngIf="isChatOpen">
+  <div class="chat-header">
+    <div class="chat-header-content">
+      <span class="chat-title">Funeraria WhatsApp</span>
+      <span class="chat-close" (click)="closeChat()">
+        <i class="ri-close-fill"></i>
+      </span>
+    </div>
+  </div>
+  <div class="chat-messages">
+    <!-- Aquí van los mensajes del chat -->
+    <div class="message">¡Hola! ¿Cómo podemos ayudarte?</div>
+  </div>
+  <div class="chat-input">
+    <input type="text" placeholder="Escribe un mensaje..." [(ngModel)]="message">
+    <a (click)="sendMessage($event)">
+      <i class="ri-send-plane-2-line"></i>
+    </a>
+  </div>
+</div>
+
+<div class="btn-wsp" (click)="isChatOpen ? closeChat() : openChat()">
+
+  <img src="./assets/imgs/wsp.svg" alt="Imagen de logo wsp">
+
+</div>

@@ -1,0 +1,22 @@
+<app-header></app-header>
+
+
+
+<section class="servico__container">
+  <p class="servico__heading text-center">Sercicios de la funeraria</p>
+
+  <div class="servicio__grid">
+    <div *ngFor="let servicio of servicios">
+      <app-card-funeraria
+        [servicio]="servicio"
+      >
+      </app-card-funeraria>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<app-footer></app-footer>

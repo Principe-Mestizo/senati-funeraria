@@ -1,0 +1,40 @@
+.form__login {
+  background-color: rebeccapurple; /* Color azul */
+  height: 100vh; /* Ajuste el tamaño al 100% de la altura de la ventana */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__contenedor {
+  background-color: white; /* Color blanco */
+  padding: 20px; /* Añadir un poco de espacio alrededor del formulario */
+  border-radius: 10px; /* Añadir bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+}
+
+.form__titulo {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form {
+  width: 400px;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+}
+
+mat-error{
+
+  font-weight: bold;
+  margin-left: 17px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}

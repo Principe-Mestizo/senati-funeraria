@@ -1,0 +1,56 @@
+<mat-nav-list class="sidenav">
+  <div class="profile-card">
+    <div class="header">
+      <h2>FUNERALS</h2>
+      <h4>admin@email.com</h4>
+    </div>
+    <img src="./assets/imgs/logo.png" alt="Soufiane FADIL">
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <h2 matSubheader>Pages</h2>
+
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/admin/">
+    <mat-icon>home</mat-icon>
+    <span id="item">Home</span>
+  </a>
+
+  <!-- Enlace principal para la gestión de empleados -->
+  <button mat-list-item (click)="toggleEmployeeMenu()" class="employee-button">
+    <mat-icon>people</mat-icon>
+    <span id="item">Usuarios</span>
+    <mat-icon class="arrow-icon" [ngClass]="{ 'expanded': isEmployeeMenuOpen }">expand_more</mat-icon>
+
+  </button>
+
+
+  <!-- Sublista para agregar y editar empleados -->
+ <mat-nav-list class="submenu" *ngIf="isEmployeeMenuOpen">
+    <a mat-list-item routerLink="/admin/empleados" routerLinkActive="list-item-active">
+      <mat-icon>people</mat-icon>
+       <span id="item">  Ver usuarios </span>
+    </a>
+  </mat-nav-list>
+
+
+  <a class="item"  mat-list-item routerLinkActive="list-item-active" routerLink="/admin/ventas">
+    <mat-icon>monetization_on</mat-icon>
+    <span id="item">Ventas</span>
+  </a>
+
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/admin/servicios">
+    <mat-icon>work</mat-icon>
+      <span id="item">Servicios</span>
+  </a>
+
+  <mat-divider></mat-divider>
+
+  <h2 matSubheader>Sistema</h2>
+
+  <a mat-list-item routerLinkActive="list-item-active" (click)="logout()">
+    <mat-icon>logout</mat-icon>
+    <span id="item">Cerrar sesión</span>
+
+  </a>
+</mat-nav-list>

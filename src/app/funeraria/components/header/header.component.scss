@@ -1,0 +1,86 @@
+@use '../../../../styles/variables' as v;
+@use '../../../../styles/mixin' as m;
+
+
+
+.header {
+
+
+  .header__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__logo{
+      cursor: pointer;
+    }
+  }
+
+  .header__navbar{
+    width: 100%;
+    margin:  0 auto;
+    background-color: v.$color-nav;
+    .navbar__list{
+      display: flex;
+      padding: 15px 20px;
+      max-width: 1400px;
+      margin:  0 auto;
+      justify-content: space-between;
+
+
+      .navbar__item, a{
+        font-weight: normal;
+        color: v.$blanco;
+      }
+    }
+
+
+  }
+
+}
+
+.header__flex {
+
+  .header__redes{
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .header__contacto{
+      padding: 20px;
+      font-size: 2rem;
+      gap: 20px;
+
+      i {
+
+        border-radius: 50%;
+      }
+
+
+    }
+
+    .header__redes-sociales {
+      font-size: 2rem;
+      padding: 20px;
+      gap: 10px;
+
+      i {
+        margin-left: 15px;
+        border-radius: 50%;
+      }
+      i:nth-child(1):hover{
+        color: v.$color-nav;
+      }
+    }
+
+    .contact__red{
+      margin-top: 15px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+  }
+
+
+}

@@ -1,0 +1,13 @@
+<app-header-shared (toggleSideBarForMe)="sideBarToggler()"></app-header-shared>
+
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBarOpen">
+        <app-sidebar></app-sidebar>
+    </mat-drawer>
+    <mat-drawer-content>
+      <h2>Vnetas</h2>
+
+    </mat-drawer-content>
+</mat-drawer-container>
+
+<app-footer-shared></app-footer-shared>

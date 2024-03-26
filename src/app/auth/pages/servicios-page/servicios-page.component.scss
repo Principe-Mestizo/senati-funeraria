@@ -1,0 +1,29 @@
+@use '../../../../styles/mixin' as m;
+@use '../../../../styles/variables' as v;
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+mat-drawer {
+  background-color: v.$color-sidebar;
+  color: v.$blanco;
+  width: 240px;
+
+  @include m.tablet {
+    width: 250px;
+  }
+  @include m.desktop {
+    width: 270px;
+  }
+}
+
+mat-drawer-container {
+  height: 100%;
+
+}
+
+mat-drawer-content {
+  padding: 20px;
+
+}
