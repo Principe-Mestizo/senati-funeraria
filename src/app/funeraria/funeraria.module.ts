@@ -3,9 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { FunerariaRoutingModule } from './funeraria-routing.module';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { ServicesPageComponent } from './pages/services-page/services-page.component';
-import { AboutPageComponent } from './pages/about-page/about-page.component';
-import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './components/main/main.component';
@@ -14,14 +11,11 @@ import { SectionInformationComponent } from './components/section-information/se
 import { RouterModule } from '@angular/router';
 import { NavegationComponent } from './components/navegation/navegation.component';
 import { SharedModule } from '../shared/shared.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     HomePageComponent,
-    ServicesPageComponent,
-    AboutPageComponent,
-    ContactPageComponent,
     HeaderComponent,
     FooterComponent,
     MainComponent,
@@ -35,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     FunerariaRoutingModule,
     RouterModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   exports : [

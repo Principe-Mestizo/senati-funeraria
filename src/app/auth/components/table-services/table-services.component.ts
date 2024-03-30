@@ -7,13 +7,6 @@ import { ServicioService } from '../../services/servicio.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalServicioComponent } from '../../modales/modal-servicio/modal-servicio.component';
 import Swal from 'sweetalert2';
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
-}
-
 
 @Component({
   selector: 'app-table-services',
@@ -23,15 +16,10 @@ export interface PeriodicElement {
 export class TableServicesComponent implements OnInit {
 
   services: Servicios[] = [];
-  displayedColumns: string[] = ['id', 'titulo', 'descripcion', 'estado', 'stock', 'imagen', 'acciones']
+  displayedColumns: string[] = ['id', 'titulo', 'descripcion', 'icon', 'acciones']
   dataSource = new MatTableDataSource(this.services);
   loading: boolean = false;
 
-
-  // TODO: estado tro o false
-  getEstadoText(estado: boolean): string {
-    return estado ? 'Activo' : 'Inactivo';
-  }
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;

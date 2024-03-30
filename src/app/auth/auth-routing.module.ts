@@ -17,11 +17,11 @@ const routes: Routes = [
 
      // TODO: crea usuarios
 
-  {
-    path: 'register',
-    component: SignupPageComponent,
-    // /canActivate: [isGuestGuard]
-  },
+  // {
+  //   path: 'register',
+  //   component: SignupPageComponent,
+  //   canActivate: [isGuestGuard]
+  // },
 
  {
    path: 'empleados',

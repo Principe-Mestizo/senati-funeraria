@@ -18,11 +18,6 @@ export class ModalServicioComponent implements OnInit {
   operacion: string = "Agregar ";
   id:number |undefined;
 
-  estados: ServiceState[] = [
-    { value: true, viewValue: 'Activo' },
-    { value: false, viewValue: 'Inactivo' }
-  ];
-
 
   constructor(
     public dialogRef: MatDialogRef<ModalServicioComponent>,
@@ -35,9 +30,7 @@ export class ModalServicioComponent implements OnInit {
     this.formService = this.fb.group({
       titulo: ['', [Validators.required, Validators.maxLength(100)]],
       descripcion: ['', [Validators.required, Validators.maxLength(250)]],
-      estado: ['', Validators.required],
-      stock: ['', Validators.required],
-      imagen: ['', Validators.required,],
+      icon: ['', Validators.required,],
     });
     this.id = data.id;
   }
@@ -50,9 +43,7 @@ export class ModalServicioComponent implements OnInit {
     const servicio: Servicios = {
       titulo: this.formService.value.titulo,
       descripcion: this.formService.value.descripcion,
-      estado: this.formService.value.estado,
-      stock: this.formService.value.stock,
-      imagen: this.formService.value.imagen,
+      icon: this.formService.value.icon,
     }
     this.loading = true;
 
@@ -104,9 +95,7 @@ export class ModalServicioComponent implements OnInit {
       this.formService.setValue({
         titulo: data.titulo,
         descripcion: data.descripcion,
-        estado: data.estado,
-        stock: data.stock,
-        imagen: data.imagen,
+        icon: data.icon,
       });
     })
   }

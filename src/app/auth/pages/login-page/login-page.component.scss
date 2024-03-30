@@ -1,16 +1,16 @@
 .form__login {
-  background-color: rebeccapurple; /* Color azul */
-  height: 100vh; /* Ajuste el tamaño al 100% de la altura de la ventana */
+  background-color: #052D43;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .form__contenedor {
-  background-color: white; /* Color blanco */
-  padding: 20px; /* Añadir un poco de espacio alrededor del formulario */
-  border-radius: 10px; /* Añadir bordes redondeados */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form__titulo {

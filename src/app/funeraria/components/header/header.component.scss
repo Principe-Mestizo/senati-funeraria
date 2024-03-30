@@ -1,86 +1,54 @@
-@use '../../../../styles/variables' as v;
-@use '../../../../styles/mixin' as m;
-
-
-
-.header {
-
-
-  .header__flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .header__logo{
-      cursor: pointer;
-    }
-  }
-
-  .header__navbar{
-    width: 100%;
-    margin:  0 auto;
-    background-color: v.$color-nav;
-    .navbar__list{
-      display: flex;
-      padding: 15px 20px;
-      max-width: 1400px;
-      margin:  0 auto;
-      justify-content: space-between;
-
-
-      .navbar__item, a{
-        font-weight: normal;
-        color: v.$blanco;
-      }
-    }
-
-
-  }
-
+/* Estilos base para el encabezado */
+#header {
+  background-color: #080c08ec; /* Fondo semi-transparente */
+  padding: 10px 0; /* Espaciado interior */
 }
 
-.header__flex {
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
+}
 
-  .header__redes{
+.header__img img {
+  max-width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+  padding: 20px;
+}
 
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
+}
 
-    .header__contacto{
-      padding: 20px;
-      font-size: 2rem;
-      gap: 20px;
+.navbar li a {
+  color: #fff; /* Color del texto */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  transition: color 0.3s ease; /* Transición suave para el color */
+  padding: 20px;
+  font-size: 1.2rem;
+}
 
-      i {
+.navbar li a:hover {
+  color: #ffa500; /* Cambia el color al pasar el ratón */
+}
 
-        border-radius: 50%;
-      }
-
-
-    }
-
-    .header__redes-sociales {
-      font-size: 2rem;
-      padding: 20px;
-      gap: 10px;
-
-      i {
-        margin-left: 15px;
-        border-radius: 50%;
-      }
-      i:nth-child(1):hover{
-        color: v.$color-nav;
-      }
-    }
-
-    .contact__red{
-      margin-top: 15px;
-      font-size: 1rem;
-      font-weight: bold;
-    }
-
+/* Media query para dispositivos móviles */
+@media (min-width: 769px) {
+  .header__container {
+    flex-direction: row; /* Alinea los elementos horizontalmente */
+    justify-content: space-between; /* Distribuye los elementos en los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+  .header__img img {
+    max-width: 400px; /* Ajusta el tamaño de la imagen al contenedor */
+    padding: 20px;
   }
 
-
+  .navbar {
+    display: flex;
+    flex-direction: row; /* Alinea los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
 }

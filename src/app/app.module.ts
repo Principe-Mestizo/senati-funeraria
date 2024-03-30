@@ -9,6 +9,8 @@ import { AuthInterceptor } from './auth/interceptors/auth.interceptor';
 
 // toastr
 import { ToastrModule } from 'ngx-toastr';
+import { NgChartsModule } from 'ng2-charts';
+
 
 @NgModule({
   declarations: [
@@ -20,10 +22,13 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserAnimationsModule,
     HttpClientModule,
     ToastrModule.forRoot(),
+    NgChartsModule,
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true
   }],
+
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

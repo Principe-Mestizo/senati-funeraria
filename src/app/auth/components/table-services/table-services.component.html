@@ -33,22 +33,11 @@
       <td mat-cell *matCellDef="let service"> {{ service.descripcion }} </td>
     </ng-container>
 
-    <!-- Estado Column -->
-    <ng-container matColumnDef="estado" id="estado-column">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> Estado </th>
-      <td mat-cell *matCellDef="let service"> {{ getEstadoText(service.estado) }} </td>
-    </ng-container>
-
-    <!-- Stock Column -->
-    <ng-container matColumnDef="stock" >
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> Stock </th>
-      <td mat-cell *matCellDef="let service"> {{ service.stock }} </td>
-    </ng-container>
 
     <!-- Imagen Column -->
-    <ng-container matColumnDef="imagen" id="stock-column">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> Imagen </th>
-      <td mat-cell *matCellDef="let service"> {{ service.imagen }} </td>
+    <ng-container matColumnDef="icon" id="stock-column">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Icon </th>
+      <td mat-cell *matCellDef="let service"> {{ service.icon }} </td>
     </ng-container>
 
     <!-- Acciones Column -->

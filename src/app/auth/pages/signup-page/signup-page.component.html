@@ -42,8 +42,11 @@
           <mat-error *ngIf="errors?.password">
           {{ errors.password }}
         </mat-error>
+        <div class="buttons__flex">
+          <button (click)="cancelar()" mat-button>Cancelar</button>
 
-      <button mat-raised-button color="primary" type="submit">Register</button>
+                <button mat-raised-button color="primary" type="submit">Register</button>
+        </div>
 
     </form>
   </section>

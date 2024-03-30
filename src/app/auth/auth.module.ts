@@ -31,6 +31,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 // Select
 import {MatSelectModule} from '@angular/material/select';
 import { TableUsersComponent } from './components/table-users/table-users.component';
+import { TableFormularioComponent } from './components/table-formulario/table-formulario.component';
+
 @NgModule({
   declarations: [
     SignupPageComponent,
@@ -43,6 +45,7 @@ import { TableUsersComponent } from './components/table-users/table-users.compon
     ModalServicioComponent,
     ModalVentasComponent,
     TableUsersComponent,
+    TableFormularioComponent,
 
   ],
   imports: [
@@ -58,7 +61,8 @@ import { TableUsersComponent } from './components/table-users/table-users.compon
     MatProgressSpinnerModule,
     MatSnackBarModule,
     MatProgressBarModule,
-    MatSelectModule
+    MatSelectModule,
+
   ]
 })
 export class AuthModule { }

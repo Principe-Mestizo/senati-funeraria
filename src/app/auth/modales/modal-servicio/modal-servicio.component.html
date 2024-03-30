@@ -23,34 +23,14 @@
     </div>
 
 
-    <mat-form-field appearance="outline">
-      <mat-label>Estado Servicio</mat-label>
-      <mat-select formControlName="estado">
-        <mat-option *ngFor="let estado of estados" [value]="estado.value">{{ estado.viewValue }}</mat-option>
-      </mat-select>
-    </mat-form-field>
-
-
-
-    <div class="error" *ngIf="formService.get('estado')?.hasError('required') && formService.get('estado')?.touched">
-      <span>El estado del servicio es requerido</span>
-    </div>
 
     <mat-form-field appearance="outline">
-      <mat-label>Stock</mat-label>
-      <input formControlName="stock" matInput type="number" placeholder="Ingrese Stock" autocomplete="off">
-    </mat-form-field>
-    <div class="error" *ngIf="formService.get('stock')?.hasError('required') && formService.get('stock')?.touched">
-      <span>El stock es requerido</span>
-    </div>
-
-    <mat-form-field appearance="outline">
-      <mat-label>Imagen</mat-label>
-      <input type="text" formControlName="imagen" matInput placeholder="Ingrese URL de la Imagen" autocomplete="off">
+      <mat-label>Icon</mat-label>
+      <input type="text" formControlName="icon" matInput placeholder="Ingrese URL del icono" autocomplete="off">
     </mat-form-field>
 
-    <div class="error" *ngIf="formService.get('imagen')?.hasError('required') && formService.get('imagen')?.touched">
-      <span>La imagen del servicio es requerido</span>
+    <div class="error" *ngIf="formService.get('icon')?.hasError('required') && formService.get('icon')?.touched">
+      <span>El icono del servicio es requerido</span>
     </div>
   </mat-dialog-content>
 

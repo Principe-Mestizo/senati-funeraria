@@ -2,6 +2,7 @@
 
 /* Estilos generales */
 :host {
+
   .mat-icon {
     vertical-align: middle;
     margin-right: 10px;
@@ -9,8 +10,7 @@
     color: v.$color-enlaces; /* Color de los iconos según la variable */
   }
   .submenu{
-    background-color: #2d304169;
-    padding: 10px
+    background-color: #022335;
   }
 
   .profile-card {
