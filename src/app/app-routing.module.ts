@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NotFundPageComponent } from './shared/pages/not-fund-page/not-fund-page.component';
 
 const routes: Routes = [
   {
@@ -14,18 +13,14 @@ const routes: Routes = [
   },
 
   {
-    path: '404',
-    component : NotFundPageComponent
-  },
-  {
     path: '**',
-    redirectTo: '404'
+    redirectTo: 'admin'
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes),
-  
+  imports: [RouterModule.forRoot(routes,),
+    
   ],
   exports: [RouterModule]
 })

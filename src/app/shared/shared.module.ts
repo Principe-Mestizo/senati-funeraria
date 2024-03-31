@@ -1,6 +1,5 @@
 import { Component, Input, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NotFundPageComponent } from './pages/not-fund-page/not-fund-page.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
@@ -20,7 +19,6 @@ import { FooterSharedComponent } from './components/footer-shared/footer-shared.
 
 @NgModule({
   declarations: [
-    NotFundPageComponent,
     CardFunerariaComponent,
     SidebarComponent,
     HeaderSharedComponent,
@@ -44,7 +42,6 @@ import { FooterSharedComponent } from './components/footer-shared/footer-shared.
 
   ],
   exports:[
-    NotFundPageComponent,
     CardFunerariaComponent,
     MatFormFieldModule,
     MatInputModule,

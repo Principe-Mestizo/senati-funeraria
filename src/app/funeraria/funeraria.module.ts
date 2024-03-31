@@ -6,8 +6,6 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './components/main/main.component';
-import { UbicacionComponent } from './components/ubicacion/ubicacion.component';
-import { SectionInformationComponent } from './components/section-information/section-information.component';
 import { RouterModule } from '@angular/router';
 import { NavegationComponent } from './components/navegation/navegation.component';
 import { SharedModule } from '../shared/shared.module';
@@ -19,8 +17,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    UbicacionComponent,
-    SectionInformationComponent,
     NavegationComponent
 
   ],
